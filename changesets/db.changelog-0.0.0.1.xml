@@ -1,0 +1,1417 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd 
+    http://www.liquibase.org/xml/ns/pro 
+    http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd 
+    http://www.liquibase.org/xml/ns/dbchangelog 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="ch-1.0" author="UrbanoCeron">
+        <createTable tableName="plazas">
+            <column name="pk_soc" type="VARCHAR(20)">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="nombre_empresa" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="nombre_comercial" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="ruta_imagen" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="ch-1.1" author="UrbanoCeron">
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A115"></column>
+            <column name="nombre_empresa" value="PG CKD M F/00978"></column>
+            <column name="nombre_comercial" value="Plaza Bella Mexiquense"></column>
+            <column name="ruta_imagen" value=""></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A127"></column>
+            <column name="nombre_empresa" value="PG CKD Q F /01067"></column>
+            <column name="nombre_comercial" value="Plaza Ensenada"></column>
+            <column name="ruta_imagen" value=""></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A128"></column>
+            <column name="nombre_empresa" value="PG CKD R F/01068"></column>
+            <column name="nombre_comercial" value="Plaza los Cabos"></column>
+            <column name="ruta_imagen" value=""></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A133"></column>
+            <column name="nombre_empresa" value="GLIDER MEXICALI S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Macro Plaza del Valle"></column>
+            <column name="ruta_imagen" value=""></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A101"></column>
+            <column name="nombre_empresa" value="PG CKD A F/00927 STA CATARINA"></column>
+            <column name="nombre_comercial" value="El Paseo Santa Catarina"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A101 Santa Catarina.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A102"></column>
+            <column name="nombre_empresa" value="WALPG MEX I S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Macro Plaza Estadio"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A102 Macroplaza estadio.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A102-2"></column>
+            <column name="nombre_empresa" value="WALPG MEX I S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Bella Frontera"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A102 Frontera.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A103"></column>
+            <column name="nombre_empresa" value="PG CKD PUEBLA CIB/2013 (F/17319-1)"></column>
+            <column name="nombre_comercial" value="Paseo Puebla"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A103 Paseo Puebla.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A105"></column>
+            <column name="nombre_empresa" value="GLIDER MONTERREY S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Bella Huinala "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A105 HuinalÃ¡.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A106"></column>
+            <column name="nombre_empresa" value="PG CKD G F/00972"></column>
+            <column name="nombre_comercial" value="Plaza Bella Anahuac"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A106 Plaza Bella AnÃ¡huac.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A107"></column>
+            <column name="nombre_empresa" value="PG CKD J F/00975"></column>
+            <column name="nombre_comercial" value="Mall Plaza Lincoln"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A107 Lincoln.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A108"></column>
+            <column name="nombre_empresa" value="PG CKD H F/00973"></column>
+            <column name="nombre_comercial" value="Plaza Real Saltillo"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A108 Plaza Real Saltillo.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A109"></column>
+            <column name="nombre_empresa" value="GLIDER SALTILLO S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Nogalera Saltillo"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A109 La nogalera.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A110"></column>
+            <column name="nombre_empresa" value="Fideicomiso PG CIB/2100"></column>
+            <column name="nombre_comercial" value="Paseo Solidaridad "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A110 Solidaridad.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A111"></column>
+            <column name="nombre_empresa" value="AP PLANIGRUPO RAMOS ARIZPE S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Bella Ramos Arizpe"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A111 Ramos Arizpe.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A112"></column>
+            <column name="nombre_empresa" value="PG CKD F F/00937"></column>
+            <column name="nombre_comercial" value="Plaza Real Reynosa"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A112 Plaza real reynosa.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A113"></column>
+            <column name="nombre_empresa" value="PG CKD K F/00976"></column>
+            <column name="nombre_comercial" value="Plaza Monumental "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A113 Plaza monumental.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A114"></column>
+            <column name="nombre_empresa" value="PG CKD L F/00977"></column>
+            <column name="nombre_comercial" value="Super Plaza Las Haciendas "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A114 Las haciendas.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A117"></column>
+            <column name="nombre_empresa" value="GLIDER PACHUCA S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Universidad Hidalgo"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A117 Plaza Universidad.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A118"></column>
+            <column name="nombre_empresa" value="PG CKD I F/00974"></column>
+            <column name="nombre_comercial" value="Plaza Palmira"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A118 Palmira.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A119"></column>
+            <column name="nombre_empresa" value="GLIDER CANCUN S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="La Gran Plaza CancÃºn "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A119 Cancun.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A121"></column>
+            <column name="nombre_empresa" value="F/01002"></column>
+            <column name="nombre_comercial" value="Macroplaza Insurgentes "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A121 Macroplaza Insurgentes.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A122"></column>
+            <column name="nombre_empresa" value="PG CKD D F/00930"></column>
+            <column name="nombre_comercial" value="Paseo Alcalde "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A122 Alcalde.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A123"></column>
+            <column name="nombre_empresa" value="PG CKD E F/00936"></column>
+            <column name="nombre_comercial" value="Paseo HipodrÃ³mo"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A123 Paseo HipÃ³dromo.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A125"></column>
+            <column name="nombre_empresa" value="PG CKD P F/00981"></column>
+            <column name="nombre_comercial" value="Urban Village Tec"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A125 Garzasada.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A126"></column>
+            <column name="nombre_empresa" value="PG CKD C F/00929"></column>
+            <column name="nombre_comercial" value="Macroplaza Oaxaca"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A126 Oaxaca.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A129"></column>
+            <column name="nombre_empresa" value="PG CKD S F/01069"></column>
+            <column name="nombre_comercial" value="Macroplaza San Luis "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A129 San Luis.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A130"></column>
+            <column name="nombre_empresa" value="GLIDER CIUDAD JUÁREZ S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="LÃ³pez Mateos "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A130 Lopez mateos.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A131"></column>
+            <column name="nombre_empresa" value="GLIDER GUADALAJARA S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Ciudadela UV"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A131 Ciudadela.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A132"></column>
+            <column name="nombre_empresa" value="GLIDER HIDALGO S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Puerta Hierro "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A132 Puerta de hierro.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A134"></column>
+            <column name="nombre_empresa" value="GLIDER NUEVO VALLARTA S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Plaza Lago Real "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A134 Lago Real.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A135"></column>
+            <column name="nombre_empresa" value="GLIDER PASEO REFORMA S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Paseo Reforma"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A135 Paseo Reforma.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A136"></column>
+            <column name="nombre_empresa" value="GLIDER REYNOSA  S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Reynosa "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A136 Paseo Reynosa.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A138"></column>
+            <column name="nombre_empresa" value="GLIDER SAN JUAN DEL RIO S DE RL DE CV"></column>
+            <column name="nombre_comercial" value="Paseo San Juan "></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A138 Paseo san juan.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A139"></column>
+            <column name="nombre_empresa" value="FIDEICOMISO PG CIB/2854"></column>
+            <column name="nombre_comercial" value="Punto San Isidro"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A139 Punto san isidro.png"></column>
+        </insert>
+        <insert tableName="plazas">
+            <column name="pk_soc" value="A140"></column>
+            <column name="nombre_empresa" value="FIDEICOMISO PG CIB/2855"></column>
+            <column name="nombre_comercial" value="Punto Oriente"></column>
+            <column name="ruta_imagen" value="../../../assets/img/logos/A140 Punto oriente.png"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-1.2" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A106 Plaza Bella Anahuac.png" />
+            <where> pk_soc = 'A106' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.3" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A123 Paseo Hipodromo.png" />
+            <where> pk_soc = 'A123' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.4" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A105 Huinala.png" />
+            <where> pk_soc = 'A105' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.5" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A117 Plaza Universidad.png" />
+            <where> pk_soc = 'A115' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.6" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A115 Mexiquense.png" />
+            <where> pk_soc = 'A115' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.7" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="../../../assets/img/logos/A133 Macroplaza del valle.png" />
+            <where> pk_soc = 'A133' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-1.8" author="UrbanoCeron">
+        <createSequence cacheSize="1" cycle="false" dataType="integer" incrementBy="1" minValue="1" sequenceName="parametros_pk_parametro_seq" startValue="1" />
+    </changeSet>
+    <changeSet id="ch-1.9" author="UrbanoCeron">
+        <createTable tableName="parametros">
+            <column name="pk_parametro" type="INTEGER" defaultValueSequenceNext="parametros_pk_parametro_seq">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="descripcion" type="VARCHAR(100)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="valor" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="ch-2.0" author="UrbanoCeron">
+        <insert tableName="parametros">
+            <column name="nombre" value="comisionPasarela"></column>
+            <column name="descripcion" value="Porcentaje de cobro por la pasarela de pagos bbva"></column>
+            <column name="valor" value="3"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-2.1" author="UrbanoCeron">
+        <createTable tableName="clientes">
+            <column name="pk_cliente" type="varchar(50)">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="activo" type="BOOLEAN">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+
+            <column name="registro_usuario" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="registro_fecha" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="actualizacion_usuario" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="actualizacion_fecha" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="ch-2.2" author="UrbanoCeron">
+        <modifyDataType tableName="clientes" columnName="nombre" newDataType="varchar(100)" />
+    </changeSet>
+    <changeSet id="ch-2.3" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A101 Santa Catarina.png" />
+            <where> pk_soc = 'A101' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-2.4" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A102 Macroplaza estadio.png" />
+            <where> pk_soc = 'A102' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A102 Frontera.png" />
+            <where> pk_soc = 'A102-2' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A103 Paseo Puebla.png" />
+            <where> pk_soc = 'A103' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A107 Lincoln.png" />
+            <where> pk_soc = 'A107' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A108 Plaza Real Saltillo.png" />
+            <where> pk_soc = 'A108' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A109 La nogalera.png" />
+            <where> pk_soc = 'A109' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A110 Solidaridad.png" />
+            <where> pk_soc = 'A110' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A111 Ramos Arizpe.png" />
+            <where> pk_soc = 'A111' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A112 Plaza real reynosa.png" />
+            <where> pk_soc = 'A112' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A113 Plaza monumental.png" />
+            <where> pk_soc = 'A113' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A114 Las haciendas.png" />
+            <where> pk_soc = 'A114' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A117 Plaza Universidad.png" />
+            <where> pk_soc = 'A117' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A118 Palmira.png" />
+            <where> pk_soc = 'A118' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A119 Cancun.png" />
+            <where> pk_soc = 'A119' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A121 Macroplaza Insurgentes.png" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A122 Alcalde.png" />
+            <where> pk_soc = 'A122' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A125 Garzasada.png" />
+            <where> pk_soc = 'A125' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A126 Oaxaca.png" />
+            <where> pk_soc = 'A126' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A129 San Luis.png" />
+            <where> pk_soc = 'A129' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A130 Lopez mateos.png" />
+            <where> pk_soc = 'A130' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A131 Ciudadela.png" />
+            <where> pk_soc = 'A131' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A132 Puerta de hierro.png" />
+            <where> pk_soc = 'A132' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A134 Lago Real.png" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A135 Paseo Reforma.png" />
+            <where> pk_soc = 'A135' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A136 Paseo Reynosa.png" />
+            <where> pk_soc = 'A136' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A138 Paseo san juan.png" />
+            <where> pk_soc = 'A138' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A139 Punto san isidro.png" />
+            <where> pk_soc = 'A139' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A140 Punto oriente.png" />
+            <where> pk_soc = 'A140' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A106 Plaza Bella Anahuac.png" />
+            <where> pk_soc = 'A106' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A123 Paseo Hipodromo.png" />
+            <where> pk_soc = 'A123' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A105 Huinala.png" />
+            <where> pk_soc = 'A105' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A115 Mexiquense.png" />
+            <where> pk_soc = 'A115' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A133 Macroplaza del valle.png" />
+            <where> pk_soc = 'A133' </where>
+        </update>
+    </changeSet>
+    <changeSet id="ch-2.5" author="UrbanoCeron">
+        <insert tableName="parametros">
+            <column name="nombre" value="logoPlaniGrupo"></column>
+            <column name="descripcion" value="Url para la imagen de logo planigrupo"></column>
+            <column name="valor" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/logo.PNG"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-2.6" author="UrbanoCeron">
+        <createTable tableName="tipo_de_pagos">
+            <column name="pk_tipo_de_pago" type="varchar(50)">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="descripcion" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="comision" type="DOUBLE">
+                <constraints nullable="false" primaryKey="false" unique="false"/>
+            </column>
+            <column name="ruta_imagen" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="activo" type="BOOLEAN">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="registro_usuario" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="registro_fecha" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="actualizacion_usuario" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+            <column name="actualizacion_fecha" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="ch-2.7" author="UrbanoCeron">
+        <insert tableName="tipo_de_pagos">
+            <column name="pk_tipo_de_pago" value="TDX"></column>
+            <column name="nombre" value="Visa/Mastercard"></column>
+            <column name="descripcion" value="Metodo de pago por tarjeta de credito o debito"></column>
+            <column name="comision" value="1.3"></column>
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/visa-mastercard.png"></column>
+            <column name="activo" value="true"></column>
+            <column name="registro_usuario" value="ADMIN"></column>
+            <column name="actualizacion_usuario" value="ADMIN"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-2.8" author="UrbanoCeron">
+        <insert tableName="tipo_de_pagos">
+            <column name="pk_tipo_de_pago" value="AMEX"></column>
+            <column name="nombre" value="American Express"></column>
+            <column name="descripcion" value="Metodo de pago para tarjetas American expres"></column>
+            <column name="comision" value="2.0"></column>
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/amex.png"></column>
+            <column name="activo" value="true"></column>
+            <column name="registro_usuario" value="ADMIN"></column>
+            <column name="actualizacion_usuario" value="ADMIN"></column>
+        </insert>
+    </changeSet>
+        <changeSet id="ch-2.8" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="debitTDX"></column>
+            <column name="descripcion" value="Porcentaje de cobro por tarjetas de debito"></column>
+            <column name="valor" value="1.02"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-2.9" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="creditTDX"></column>
+            <column name="descripcion" value="Porcentaje de cobro por tarjetas de credito"></column>
+            <column name="valor" value="1.03"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-3.0" author="JavierGarcia">
+        <addColumn
+			tableName="plazas" > 
+            <column name="no_cuenta" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="clabe_referencia" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-3.1" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111019430" />
+            <where> pk_soc = 'A101' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0197933428" />
+            <where> pk_soc = 'A102' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0186944094" />
+            <where> pk_soc = 'A102-2' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0199120017" />
+            <where> pk_soc = 'A103' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035235" />
+            <where> pk_soc = 'A107' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035219" />
+            <where> pk_soc = 'A108' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111577980" />
+            <where> pk_soc = 'A109' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0105068967" />
+            <where> pk_soc = 'A110' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970824" />
+            <where> pk_soc = 'A111' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035049" />
+            <where> pk_soc = 'A112' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035243" />
+            <where> pk_soc = 'A113' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035251" />
+            <where> pk_soc = 'A114' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111577964" />
+            <where> pk_soc = 'A117' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035227" />
+            <where> pk_soc = 'A118' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111577042" />
+            <where> pk_soc = 'A119' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0100911364" />
+            <where> pk_soc = 'A122' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0193145840" />
+            <where> pk_soc = 'A125' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0198715823" />
+            <where> pk_soc = 'A126' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0105070457" />
+            <where> pk_soc = 'A129' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970786" />
+            <where> pk_soc = 'A130' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970778" />
+            <where> pk_soc = 'A131' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970816" />
+            <where> pk_soc = 'A132' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970727" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970840" />
+            <where> pk_soc = 'A135' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970794" />
+            <where> pk_soc = 'A136' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970808" />
+            <where> pk_soc = 'A138' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111193821" />
+            <where> pk_soc = 'A139' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111193686" />
+            <where> pk_soc = 'A140' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035197" />
+            <where> pk_soc = 'A106' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0105069459" />
+            <where> pk_soc = 'A123' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0111577220" />
+            <where> pk_soc = 'A105' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0112035278" />
+            <where> pk_soc = 'A115' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0110970832" />
+            <where> pk_soc = 'A133' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-3.2" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014989082" />
+            <where> pk_soc = 'A101' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014989082" />
+            <where> pk_soc = 'A102' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014989082" />
+            <where> pk_soc = 'A102-2' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002012908434" />
+            <where> pk_soc = 'A103' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332230" />
+            <where> pk_soc = 'A107' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332586" />
+            <where> pk_soc = 'A108' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015011784" />
+            <where> pk_soc = 'A109' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002013545663" />
+            <where> pk_soc = 'A110' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014499747" />
+            <where> pk_soc = 'A111' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332078" />
+            <where> pk_soc = 'A112' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332311" />
+            <where> pk_soc = 'A113' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332667" />
+            <where> pk_soc = 'A114' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015012246" />
+            <where> pk_soc = 'A117' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015333394" />
+            <where> pk_soc = 'A118' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015010701" />
+            <where> pk_soc = 'A119' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="0" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002013110263" />
+            <where> pk_soc = 'A122' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002013545744" />
+            <where> pk_soc = 'A125' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002012834058" />
+            <where> pk_soc = 'A126' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002013547441" />
+            <where> pk_soc = 'A129' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014498502" />
+            <where> pk_soc = 'A130' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014498421" />
+            <where> pk_soc = 'A131' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014499585" />
+            <where> pk_soc = 'A132' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014497969" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014496481" />
+            <where> pk_soc = 'A135' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014498269" />
+            <where> pk_soc = 'A136' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014501583" />
+            <where> pk_soc = 'A138' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014810614" />
+            <where> pk_soc = 'A139' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014810960" />
+            <where> pk_soc = 'A140' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332159" />
+            <where> pk_soc = 'A106' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002013545744" />
+            <where> pk_soc = 'A123' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015010387" />
+            <where> pk_soc = 'A105' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002015332748" />
+            <where> pk_soc = 'A115' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002014496216" />
+            <where> pk_soc = 'A133' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-3.3" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0196385869" />
+            <where> pk_soc = 'A127' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="no_cuenta" value="0196386946" />
+            <where> pk_soc = 'A128' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002012488983" />
+            <where> pk_soc = 'A127' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="012914002012489283" />
+            <where> pk_soc = 'A128' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-3.4" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="no_cuenta" value="MXN:7011 6117981/USD:7002 9234017" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="002028701161179816/002028700292340175" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-3.5" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="no_cuenta" value="MXN:7011 6117981 - USD:7002 9234017" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="clabe_referencia" value="MXN:002028701161179816 - USD:002028700292340175" />
+            <where> pk_soc = 'A121' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-3.6" author="JavierGarcia">
+        <createSequence cacheSize="1" cycle="false" dataType="integer" incrementBy="1" minValue="1" sequenceName="referencias_pk_ref_seq" startValue="1" />
+    </changeSet>
+
+    <changeSet id="ch-3.7" author="JavierGarcia">
+        <createTable tableName="referencias">
+            <column name="pk_ref" type="INTEGER" defaultValueSequenceNext="referencias_pk_ref_seq">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="factura" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="buzei" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="belnr" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="ch-3.8" author="JavierGarcia">
+        <insert tableName="referencias">
+            <column name="factura" value="12345"></column>
+            <column name="buzei" value="1"></column>
+            <column name="belnr" value="0123456789"></column>
+        </insert>
+    </changeSet>
+    <changeSet id="ch-3.9" author="JavierGarcia">
+        <insert tableName="referencias">
+            <column name="factura" value="12048"></column>
+            <column name="buzei" value="1"></column>
+            <column name="belnr" value="2100000002"></column>
+        </insert>
+    </changeSet>
+    
+    <changeSet id="ch-4.0" author="JavierGarcia">
+        <createSequence cacheSize="1" cycle="false" dataType="integer" incrementBy="1" minValue="1" sequenceName="bitacora_pk_pagos_seq" startValue="1" />
+    </changeSet>
+
+    <changeSet id="ch-4.1" author="JavierGarcia">
+        <createTable tableName="bitacora">
+            <column name="pk_pagos" type="INTEGER" defaultValueSequenceNext="bitacora_pk_pagos_seq">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="order" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="reference" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="amount" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="responseCode" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="description" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="no_approve" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="hash" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="currency" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="paymentType" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="paymentDetail" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="date" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="userName" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="phone" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="email" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="no_account" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="ch-4.2" author="JavierGarcia">
+        <addColumn
+			tableName="referencias" > 
+            <column name="consecutivo" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-4.3" author="JavierGarcia">
+        <dropTable  
+            cascadeConstraints="true" 
+            tableName="bitacora"/> 
+    </changeSet>
+
+    <changeSet id="ch-4.4" author="JavierGarcia">
+        <createSequence cacheSize="1" cycle="false" dataType="integer" incrementBy="1" minValue="1" sequenceName="binnacle_pk_pagos_seq" startValue="1" />
+    </changeSet>
+
+    <changeSet id="ch-4.5" author="JavierGarcia">
+        <createTable tableName="bitacora">
+            <column name="pk_pagos" type="INTEGER" defaultValueSequenceNext="binnacle_pk_pagos_seq">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="order" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="reference" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="concept" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="currency" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="amount" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="response" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="responsemsg" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="authorization" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="date" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="customername" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="status" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="ch-4.6" author="JavierGarcia">
+        <renameColumn  
+            newColumnName="pay_date"  
+            oldColumnName="date"   
+            schemaName="planigrupo"  
+            tableName="bitacora"/>
+    </changeSet>
+
+    <changeSet id="ch-4.7" author="JavierGarcia">
+        <renameColumn  
+            newColumnName="pay_order"  
+            oldColumnName="order"   
+            schemaName="planigrupo"  
+            tableName="bitacora"/>
+        <renameColumn  
+            newColumnName="pay_auth"  
+            oldColumnName="authorization"   
+            schemaName="planigrupo"  
+            tableName="bitacora"/>
+    </changeSet>
+
+    <changeSet id="ch-4.8" author="JavierGarcia">
+        <addColumn
+			tableName="referencias" > 
+            <column name="btn_status" type="boolean">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+    <changeSet id="ch-4.9" author="JavierGarcia">
+    <addColumn
+			tableName="referencias" > 
+            <column name="last_datePay" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+        <addColumn
+			tableName="bitacora" > 
+            <column name="document" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.0" author="JavierGarcia">
+        <renameColumn  
+            newColumnName="pay_date"  
+            oldColumnName="last_datePay"   
+            schemaName="planigrupo"  
+            tableName="referencias"/>
+    </changeSet>
+
+    <changeSet id="ch-5.1" author="JavierGarcia">
+        <addColumn
+			tableName="plazas" > 
+            <column name="mp_node" type="VARCHAR(20)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.2" author="JavierGarcia">
+        <dropColumn 
+                    schemaName="planigrupo"  
+                    tableName="plazas">  
+            <column name="mp_node"/>  
+        </dropColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.3" author="JavierGarcia">
+        <addColumn
+			tableName="plazas" > 
+            <column name="mp_node" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.4" author="JavierGarcia" >  
+        <renameColumn  
+                newColumnName="nivel"  
+                oldColumnName="mp_node"    
+                schemaName="planigrupo"  
+                tableName="plazas"/>  
+    </changeSet>
+
+    <changeSet id="ch-5.5" author="JavierGarcia">
+        <dropColumn 
+                    schemaName="planigrupo"  
+                    tableName="plazas">  
+            <column name="nivel"/>  
+        </dropColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.6" author="JavierGarcia">
+        <addColumn
+			tableName="plazas" > 
+            <column name="nivel_plaza" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.7" author="UrbanoCeron">
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A128 Plaza los Cabos.png" />
+            <where> pk_soc = 'A128' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="ruta_imagen" value="https://filesyncplanigrupo.blob.core.windows.net/stcrbl-imagenes-plani/A127 Plaza Ensenada.png" />
+            <where> pk_soc = 'A127' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-5.8" author="JavierGarcia">
+        <addColumn
+			tableName="bitacora" > 
+            <column name="nivel" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-5.9" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="secretKeyBBVA"></column>
+            <column name="descripcion" value="Llave PRE-PRODUCTIVA BBVA"></column>
+            <column name="valor" value=""></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-6.0" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="8" />
+            <where> pk_soc = 'A122' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="15" />
+            <where> pk_soc = 'A130' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="16" />
+            <where> pk_soc = 'A131' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="17" />
+            <where> pk_soc = 'A132' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="18" />
+            <where> pk_soc = 'A136' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="19" />
+            <where> pk_soc = 'A138' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="12" />
+            <where> pk_soc = '133' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="13" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="10" />
+            <where> pk_soc = 'A110' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="9" />
+            <where> pk_soc = 'A123' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="26" />
+            <where> pk_soc = 'A109' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="6" />
+            <where> pk_soc = 'A126' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="20" />
+            <where> pk_soc = 'A111' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="11" />
+            <where> pk_soc = 'A129' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="27" />
+            <where> pk_soc = 'A117' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="24" />
+            <where> pk_soc = 'A119' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="4" />
+            <where> pk_soc = 'A127' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="2" />
+            <where> pk_soc = 'A125' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="14" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="25" />
+            <where> pk_soc = 'A105' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="3" />
+            <where> pk_soc = 'A128' </where>
+        </update>
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="23" />
+            <where> pk_soc = 'A139' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-6.1" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="12" />
+            <where> pk_soc = 'A133' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-6.2" author="JavierGarcia">
+        <update tableName="plazas">
+            <column name="nivel_plaza" value="13" />
+            <where> pk_soc = 'A134' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="ch-6.3" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="daysNotAvailables"></column>
+            <column name="descripcion" value="Días inhabiles a considerar, separados por comas ','"></column>
+            <column name="valor" value="2022-11-02, 2022-12-25, 2023-01-01"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-6.4" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="URL_BBVA"></column>
+            <column name="descripcion" value="URL Para conexion a BBVA, actual: PRO-Productiva"></column>
+            <column name="valor" value="https://prepro.adquiracloud.mx/clb/endpoint/planiGrupo"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-6.5" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="mp_account_BBVA"></column>
+            <column name="descripcion" value="mp_account para conexion a BBVA, actual: PRO-Productiva"></column>
+            <column name="valor" value="12476"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-6.6" author="JavierGarcia">
+        <createSequence cacheSize="1" cycle="false" dataType="integer" incrementBy="1" minValue="1" sequenceName="pk_disclaimer_id_seq" startValue="1" />
+    </changeSet>
+
+    <changeSet id="ch-6.7" author="JavierGarcia">
+        <createTable tableName="disclaimer">
+            <column name="pk_disclaimer_id" type="INTEGER" defaultValueSequenceNext="pk_disclaimer_id_seq">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="dateRegister" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="clientNumber" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="ch-6.8" author="JavierGarcia">
+        <renameColumn  
+            newColumnName="date_Register"  
+            oldColumnName="dateRegister"   
+            schemaName="planigrupo"  
+            tableName="disclaimer"/>
+        <renameColumn  
+            newColumnName="client_number"  
+            oldColumnName="clientNumber"   
+            schemaName="planigrupo"  
+            tableName="disclaimer"/>
+    </changeSet>
+
+    <changeSet id="ch-6.9" author="JavierGarcia">
+        <renameColumn  
+            newColumnName="date_register"  
+            oldColumnName="date_Register"   
+            schemaName="planigrupo"  
+            tableName="disclaimer"/>
+    </changeSet>
+
+    <changeSet id="ch-7.0" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="speiComision"></column>
+            <column name="descripcion" value="Comision al realizar pagos con buentas BBVA"></column>
+            <column name="valor" value="1.02"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-7.1" author="JavierGarcia">
+        <update tableName="parametros">
+            <column name="nombre" value="BBVA_Commission" />
+            <where> pk_parametro = '9' </where>
+        </update>
+
+        <update tableName="parametros">
+            <column name="nombre" value="debit_Commission" />
+            <where> pk_parametro = '3' </where>
+        </update>
+
+        <update tableName="parametros">
+            <column name="nombre" value="credit_Commission" />
+            <where> pk_parametro = '4' </where>
+        </update>
+
+        <insert tableName="parametros">
+            <column name="nombre" value="CI_Commission"></column>
+            <column name="descripcion" value="Comision al realizar pagos con Cuentas Interbancarias"></column>
+            <column name="valor" value="6"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-7.2" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="dollarsEnable"></column>
+            <column name="descripcion" value="Bandere para habilitar el pago en dolares (1 = Activado; 0 = Desactivado)"></column>
+            <column name="valor" value="1"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-7.3" author="JavierGarcia">
+        <addColumn
+			tableName="bitacora" > 
+            <column name="pay_method" type="varchar(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+	    </addColumn> 
+    </changeSet>
+
+    <changeSet id="ch-7.4" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="email"></column>
+            <column name="descripcion" value="Dirección de correo para solicitar cuenta"></column>
+            <column name="valor" value="buzonportaldeclientes@planigrupo.com"></column>
+        </insert>
+        <insert tableName="parametros">
+            <column name="nombre" value="email_PWD"></column>
+            <column name="descripcion" value="Contraseña de cuenta de correo"></column>
+            <column name="valor" value="Bpc2022Png"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-7.5" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="email_host"></column>
+            <column name="descripcion" value="Host de correo para solicitar cuenta"></column>
+            <column name="valor" value="smtp.office365.com"></column>
+        </insert>
+        <insert tableName="parametros">
+            <column name="nombre" value="email_port"></column>
+            <column name="descripcion" value="Port de correo para solicitar cuenta"></column>
+            <column name="valor" value="587"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="ch-7.6" author="JavierGarcia">
+        <insert tableName="parametros">
+            <column name="nombre" value="Manual"></column>
+            <column name="descripcion" value="Manual de usuario"></column>
+            <column name="valor" value="../../../assets/ManualUsuario Portal de Clientes Planigrupo v1.pdf"></column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

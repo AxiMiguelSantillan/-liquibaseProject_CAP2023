@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd 
+    http://www.liquibase.org/xml/ns/pro 
+    http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd 
+    http://www.liquibase.org/xml/ns/dbchangelog 
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!-- Crear una tabla con almenos 5 atributos -->
+    <changeSet id="ch-1.0" author="Miguel">
+        <createTable tableName="Mascota">
+            <column name="id" type="INT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="edad" type="INT"/>
+            <column name="raza" type="VARCHAR(20)"/>
+            <column name="direccion" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>    
+    
+</databaseChangeLog>
